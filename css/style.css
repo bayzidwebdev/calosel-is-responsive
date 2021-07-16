@@ -1,0 +1,555 @@
+/* font-family: 'Montserrat', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 
+==============================
+Basic setup
+==============================
+*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+.btn,
+hr,
+p,
+li,
+ul{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* 
+==============================
+Basic setup
+==============================
+*/
+
+
+
+/* 
+==============================
+font-family & size
+==============================
+*/
+.f-300{
+    font-weight: 300;
+}
+.f-400{
+
+    font-weight: 400;
+}
+.f-500{
+
+    font-weight: 500;
+}
+.f-600{
+
+    font-weight: 600;
+}
+.f-700{
+    font-weight: 700;
+}
+.f-800{
+
+    font-weight: 800;
+}
+/* 
+==============================
+font-family & size
+==============================
+*/
+
+/* 
+==============================
+text color
+==============================
+*/
+.ic{
+    color: #ff3334;
+}
+.t-c-bl{
+    color: #2a5da3;
+}
+.t-c-ff{
+    color: #fff;
+}
+.t-c-gr{
+    color: #66778e;
+}
+.t-c-gh{
+    color: #14396a;
+}
+.fs-15{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-18{
+    font-size: 18px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-26{
+    font-size: 26px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.tt-u{
+    text-transform: uppercase;
+}
+.tt-c{
+    text-transform: capitalize;
+}
+/* 
+==============================
+text color
+==============================
+*/
+
+
+ 
+
+/* 
+==============================
+backgorund color
+==============================
+*/
+.bg-c-gr{
+    background: #071325;
+}
+.bg-c-gb{
+    background: #030810;
+}
+
+.bg-c-li{
+    background: linear-gradient(#0a2449, #051021 );
+}
+/* 
+==============================
+backgorund color
+==============================
+*/
+
+
+
+/* 
+==============================
+reusable componetes
+==============================
+*/
+
+.cs{
+    color: #2a5da3;
+    }
+a:hover{
+    color: #fff !important;
+    transition: 0.4s all ease-in-out;
+}
+.expl-btn:hover, .expl-btn2:hover{
+    
+background: #2a5da3;
+}
+/* 
+==============================
+reusable componetes
+==============================
+*/
+
+
+
+
+/* ===================================================main css======================================= */
+
+
+
+
+/* 
+==============================
+header css start here
+==============================
+*/
+.logo img{
+width: 40%;
+}
+header{
+    padding-top: 60px;
+    padding-bottom: 160px;
+}
+.toggle{
+    
+}
+
+/* navicon  */
+#nav-icon {
+    position: relative;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+    /* Bring icon ontop of overlay */
+    cursor: pointer;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+  }
+  
+  #nav-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2a5da3;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+  
+  #nav-icon span:nth-child(1) {
+    top: 0px;
+  }
+  
+  #nav-icon span:nth-child(2) {
+    top: 12px;
+  }
+  
+  #nav-icon span:nth-child(3) {
+    top: 24px;
+  }
+  
+  #nav-icon.animate-icon span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  
+  #nav-icon.animate-icon span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+  }
+  
+  #nav-icon.animate-icon span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+
+
+/* overlay  */
+#overlay {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Overlay positioning */
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Want a left- or right sided navigation instead? Just play around with the width! */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  #overlay div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  #overlay ul {
+    list-style: none;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding: 130px 130px;
+    border: 2px solid #071b37;
+    border-radius: 5px;
+    background: #071b37;
+  }
+  #overlay ul li a{
+      color: #66778e;
+      transition: none !important;
+  }
+  #overlay ul li {
+      margin: 20px 0;
+  }
+  #overlay ul li a:hover{
+      color: #ff3334 !important;
+  }
+/* 
+==============================
+header css end here
+==============================
+*/
+
+
+/* 
+==============================
+tamplate css start here
+==============================
+*/
+.tamplate{
+padding-bottom: 40px;
+}
+.expl-btn{
+    padding: 16px 30px;
+    border: 2px solid #2a5da3;
+    border-radius: 50px;
+}
+/* 
+==============================
+tamplate css end here
+==============================
+*/
+
+/* 
+==============================
+banner css start here
+==============================
+*/
+.banner{
+    padding: 110px 0;
+    position: relative;
+    z-index: 9999;
+}
+.ban-img{
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.banner .ban-1{
+
+width: 97%;
+}
+.banner .ban-2{
+    
+width: 98%;
+}
+.banner .ban-3{
+    
+}
+/* 
+==============================
+banner css end here
+==============================
+*/
+
+/* 
+==============================
+tamplate-two   css start here
+==============================
+*/
+.tamplate-two{
+}
+.tampl-two-text p{
+    line-height: 30px;
+}
+.expl-btn2{
+    padding: 16px 55px;
+    border: 2px solid #2a5da3;
+    border-radius: 50px;
+}
+.tamplate-two-img{
+    top: 0;
+    left: 0;
+}
+.tamplate-two-img img{
+    width: 520px;
+}
+.viw-m-btn{
+    padding-bottom: 120px;
+}
+/* 
+==============================
+tamplate-two   css end here
+==============================
+*/
+
+/* 
+==============================
+feature css start here
+==============================
+*/
+.feature{
+padding-bottom: 380px;
+}
+.f-h1{
+    padding-bottom: 160px;
+}
+.icon-festure-text p{
+    line-height: 30px;
+}
+.icon-festure-text i{
+    font-size: 35px;
+}
+.feture-main-img{
+
+top: 25%;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+text-align: center;
+}
+.feture-main-img img{
+    
+width: 100%;
+}
+/* 
+==============================
+feature css end here
+==============================
+*/
+
+/* 
+==============================
+mockup css start here
+==============================
+*/
+.mockup{
+padding-bottom: 115px;
+}
+.mock-up-text-icon p{
+    line-height: 30px;
+}
+.mock-img{
+    top: 0;
+right: 0;
+text-align: right;
+}
+.mock-img img{
+
+width: 70%;
+}
+.mock-row{
+    height: 497px;
+}
+.mock-up-icon i{
+    font-size: 35px;
+}
+/* 
+==============================
+mockup css end here
+==============================
+*/
+
+/* 
+==============================
+testimonial css start here
+==============================
+*/
+.testimonial{
+    padding: 180px 0;
+}
+.slider-test p{
+    line-height: 30px;
+}
+.slide-mee{
+    
+width: 50px;
+    
+height: 50px;
+    
+border-radius: 50%;
+    
+overflow: hidden;
+}
+.slide-mee img{
+
+width: 100%;
+margin-top: -10px;
+}
+/* 
+==============================
+testimonial css end here
+==============================
+*/
+
+/* 
+==============================
+discover css start here
+==============================
+*/
+.discover{
+    padding-top: 140px;
+    padding-bottom: 130px;
+}
+.discover-text p{
+    line-height: 30px;
+}
+
+/* 
+==============================
+discover css end here
+==============================
+*/
+.discover-botttom{
+    background: #66778e;
+    margin: auto;
+    width: 89%;
+}
+.discover-img img{
+    width: 100%;
+}
+/* 
+==============================
+footer css start here
+==============================
+*/
+.footer-menu ul li{
+    float: left;
+    margin-right: 16px;
+}
+/* 
+==============================
+footer css end here
+==============================
+*/
+
+
+/* swipper  */
+.swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }

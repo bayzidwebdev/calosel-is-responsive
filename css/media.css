@@ -1,0 +1,132 @@
+@media (min-width:992px) and (max-width:1199px){
+    .tamplate-two-img img {
+        width: 480px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+.mock-img img{
+    width: 60%;
+}
+.feature {
+    padding-bottom: 130px;
+}
+.tamplate-two-img img {
+    width: 375px;
+}
+}
+@media (min-width:0px) and (max-width:767px){
+    .icon-feat{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .icon-feat i{
+        margin-right: 10px;
+        padding: 0;
+    }
+    .icon-feat h1{
+        padding: 0;
+    }
+    .feture-main-img {
+        top: 65%;
+    }
+    .mockup {
+        z-index: 9999999;
+    }
+    .mock-img {
+        top: 38%;
+        z-index: -1;
+    }
+    .mockup .row{
+        display: inherit;
+    }
+    .tamplate-two-img {
+        top: 345px;
+        left: 0;
+    }
+    .viw-m-btn {
+        text-align: center;
+    }
+    .tampl-two-text{
+        margin-bottom: 300px;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer-menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    }
+    .mock-up-icon{
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .mock-up-icon i{
+        margin-right: 10px;
+    }
+}
+@media (min-width:0px) and (max-width:575px){
+
+}
+@media (min-width:0px) and (max-width:425px){
+    .feture-main-img{
+        display: none;
+    }
+    .tamplate-two-img{
+        display: none;
+    }
+    .mock-img{
+        display: none;
+    }
+    .tamplate-two {
+        text-align: center;
+    }
+    .fs-24 {
+        font-size: 22px;
+    }
+    .tampl-two-text {
+        margin-bottom: 0px; 
+    }
+    .f-h1 {
+        padding-bottom: 70px;
+    }
+    .feature {
+        padding-bottom: 10px;
+    }
+    .mock-row {
+        height: 400px;
+    }
+    .img-slide{
+        display: inherit !important;
+        padding-top: 30px;
+    }
+    .slide-mee {
+    margin: auto;
+    }
+    .slide-text p{
+        margin-top: 15px;
+    }
+    .testimonial {
+        padding: 130px 0;
+    }
+    .logo img {
+        width: 55%;
+    }
+}
+@media (min-width:0px) and (max-width:375px){
+    .fs-24 {
+        font-size: 20px;
+    }
+    .tamplate-text h1{
+        font-size: 28px;
+    }
+}
+@media (min-width:0px) and (max-width:320px){
+
+    .fs-24 {
+        font-size: 16px;
+    }
+    
+}
